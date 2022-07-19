@@ -5,9 +5,11 @@ import styles from "./Sidebar.module.scss";
 const Sidebar: React.FC = () => {
   return (
     <div className={styles.root}>
-      <h5>
-        <span>Dev</span>challenges.io
-      </h5>
+      <a href="https://devchallenges.io/paths/front-end-developer">
+        <h5>
+          <span>Dev</span>challenges.io
+        </h5>
+      </a>
       <span>Colors</span>
       <span>Typography</span>
       <span>Spaces</span>

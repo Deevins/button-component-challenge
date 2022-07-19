@@ -25,7 +25,7 @@ const ButtonContainer: React.FC = () => {
           </div>
         </div>
       </div>
-      {/*    -------------------------------*/}
+      {/*-----------------------------------------------------*/}
       <div className={styles.group}>
         <ContainerTitle text={"Button disabled variants:"} />
         <div className={styles.buttonsGroup}>
