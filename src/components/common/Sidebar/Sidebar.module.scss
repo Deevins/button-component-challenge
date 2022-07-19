@@ -1,0 +1,42 @@
+@import './src/styles/variables';
+
+.root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    h5 {
+      color: blue;
+      padding-bottom: 122px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+  span:first-child{
+    color:red;
+    cursor: default;
+  }
+
+  span:not(:first-child){
+    padding: 2px 40px;
+    margin-bottom:25px;
+    color: $sidebar-font;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    &:hover{
+      cursor: pointer;
+      font-size: 15px;
+      animation: ease-in;
+      transition-delay: 100ms;
+    }
+    &.active {
+      color:black;
+      font-weight: 700;
+    }
+
+  }
+
+}

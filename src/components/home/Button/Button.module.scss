@@ -1,0 +1,200 @@
+@import 'src/styles/variables';
+
+.main{
+  min-width: 105px;
+  height: 36px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background: #E0E0E0;
+  box-shadow: 0 2px 3px rgba(51, 51, 51, 0.2);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &:hover{
+    background:$default-hover-color;
+  }
+  &:focus{
+    background: $default-hover-color;
+  }
+
+}
+
+.buttonWithIcons {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+}
+.classic{
+  &:hover{
+    background: #AEAEAE;
+  }
+
+  &:focus{
+    background: #AEAEAE;
+  }
+}
+.outline{
+  border: 1px solid $outline-color ;
+  font-weight: 500;
+  color:blue;
+  background: transparent;
+  box-shadow: none;
+
+  &:hover {
+    background: rgba(41, 98, 255, 0.1);
+  }
+  &:focus{
+    background: rgba(41, 98, 255, 0.1);
+  }
+}
+
+.text {
+  border:none;
+  color:$outline-color;
+  background: transparent;
+  box-shadow: none;
+  font-weight: 500;
+  &:hover {
+    background: rgba(41, 98, 255, 0.1);
+  }
+  &:focus{
+    background: rgba(41, 98, 255, 0.1);
+  }
+}
+
+.disabledShadow {
+  background: $outline-color;
+  color:white;
+
+  &:hover{
+    background: $outline-color;
+  }
+  &:focus {
+    background: $outline-color;
+  }
+}
+
+.disabled {
+  color:$disabled-color;
+  background: #E0E0E0;
+  cursor: default;
+
+  &:hover {
+    background: #E0E0E0;
+  }
+  &:focus{
+    background: #E0E0E0;
+  }
+
+}
+
+.disabledText {
+  background: transparent;
+  box-shadow: none;
+
+  &:hover {
+    background: transparent;
+  }
+  &:focus{
+    background: transparent;
+  }
+}
+.icon {
+  font-size: 18px;
+  flex-basis: fit-content;
+  align-self:center;
+
+}
+.withStartIcon {
+  p{
+    display: flex;
+    margin-left: 10px;
+  }
+}
+.withEndIcon {
+  p{
+    display: flex;
+    margin-right: 10px;
+  }
+}
+.sm {
+  color:white;
+  background: #2962FF;
+  min-width: 73px;
+  min-height: 32px;
+
+}
+
+.md{
+  color:white;
+  background: #2962FF;
+  min-width: 81px;
+  min-height: 36px;
+  padding: 5px 20px;
+}
+
+.lg{
+  color:white;
+  background: #2962FF;
+  min-width: 93px;
+  min-height: 42px;
+  padding: 5px 30px;
+}
+
+//default
+
+.default {
+  background: $default-color;
+  color:white;
+&:hover{
+  background: $default-color-hover;
+}
+  &:focus{
+    background: $default-color-hover;
+  }
+}
+
+.primary{
+  color:white;
+  background: $primary-color;
+
+
+&:hover{
+  background: $primary-color-hover;
+}
+  &:focus{
+    background: $primary-color-hover;
+  }
+}
+
+ .secondary{
+   color:white;
+   background: $secondary-color;
+
+
+&:hover{
+  background: $secondary-color-hover;
+}
+   &:focus{
+     background: $secondary-color-hover;
+   }
+ }
+
+ .danger{
+   color: white;
+   background: $danger-color;
+
+
+ &:hover{
+   background: $danger-color-hover;
+ }
+   &:focus{
+     background: $danger-color-hover;
+   }
+ }
